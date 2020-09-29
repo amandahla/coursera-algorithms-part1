@@ -10,15 +10,15 @@ func main() {
 	log.Print(myset)
 
 	for i := 0; i < len(myset); i++ {
-		min := i
-		for j := i + 1; j < len(myset); j++ {
-			if myset[j] < myset[min] {
-				min = j
+		for j := i; j > 0; j-- {
+			if myset[j] > myset[j-1] {
+				break
 			}
+
+			tmp := myset[j-1]
+			myset[j-1] = myset[j]
+			myset[j] = tmp
 		}
-		tmp := myset[i]
-		myset[i] = myset[min]
-		myset[min] = tmp
 	}
 
 	log.Print(myset)
