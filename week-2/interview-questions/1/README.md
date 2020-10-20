@@ -1,0 +1,1 @@
+Intersection of two sets. Given two arrays \mathtt{a[]}a[] and \mathtt{b[]}b[], each containing nn distinct 2D points in the plane, design a subquadratic algorithm to count the number of points that are contained both in array \mathtt{a[]}a[] and array \mathtt{b[]}b[].
